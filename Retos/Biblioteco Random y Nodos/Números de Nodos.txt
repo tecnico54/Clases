@@ -1,7 +1,21 @@
-def nÚmero_de_nodos(lista):
-    def __init__(self, lista):
-        self.lista = lista
-    if lista == [1, 2, 3, 4, 5, 6, 7]:
+class nodo():
+    def __init__(self, dato, siguiente = None):
+        self.dato = dato
+        self.siguiente = siguiente
+    def __str__(self):
+        return str(self.dato)
+def recorrer(lista):
+    if lista != None:
+        print(lista.dato)
+        lista = lista.siguiente
         pass
-lista = [1, 2, 3, 4, 5, 6, 7]
-print(f"Los Datos Son: {lista}")
+    else:
+        print(f"No corresponde ")
+lista = nodo
+lista1 = nodo(1)
+lista2 = nodo(2)
+lista3 = nodo(3)
+lista4 = nodo(4)
+lista5 = nodo(5)
+print(f"Los datos son: ")
+print(lista1, lista2, lista3, lista4, lista5)
