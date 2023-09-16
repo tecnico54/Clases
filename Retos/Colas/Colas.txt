@@ -1,1 +1,79 @@
-
+from .tipos import Item
+from fastapi import FastAPI
+from paquete.tipos import Item
+from typing import Union
+from paquete.cola import Cola
+import requests
+class Item:
+url = "https://fantastic-fiesta-gj9rpgpr5vjfvjgj-41617.app.github.dev/"
+r = requests.get(url)
+a = Item(nombre = "Albeiro", productos = ["a1", "a2"])
+nombre: str
+productos: list[str]
+def Nodo():
+    def __init__(self, valor = Item):
+        self.valor = valor
+        self.siguiente = None
+def Cola(Item, nuevo_nodo):
+    def __init__(self):
+        self.primero = None
+        self.ultimo = None
+    def esta_vacia(self):
+        self.vacia = esta_vacia
+        return self.primero is None
+    def encolar(self, valor = Item):
+        self.encolar = encolar
+        self.Item = Item
+        return nuevo_nodo == Nodo(valor)
+    def recorrer(self):
+        self.recorrer = recorrer
+        if self.esta_vacia():
+            self.primero = nuevo_nodo
+        else:
+            self.ultimo.siguiente = nuevo_nodo
+            self.ultimo = nuevo_nodo
+    def desencolar(self):
+        self.desencolar = desencolar
+        if self.esta_vacia():
+            return None
+        valor = self.primero.valor
+        self.primero = self.primero.siguiente
+        if self.primero is None:
+            self.ultimo = None
+        return valor
+    def ver_listado(self):
+        self.listado = ver_listado
+        pass
+    def ver_primero(self):
+        self.primero = ver_primero
+        pass
+    def ver_ultimo(self):
+        self.ultimo = ver_ultimo
+        pass
+    def contar(self):
+        self.contrar = contar
+        pass 
+app = FastAPI()
+cola = Cola()
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+@app.get("/estado")
+def estado():
+    elementos = cola.contar()
+    return {"status": "ok", "elementos": elementos}
+@app.post("/encolar")
+def encolar(item: dict):
+    cola.encolar(item)
+    return {"status": "ok"}
+@app.get("/desencolar")
+def desencolar():
+    elemento = cola.desencolar()
+    return {"status": "ok", "elemento": elemento}
+@app.get("/ver_todos")
+def ver_todos():
+    elementos = cola.ver_listado()
+    return {"status": "ok", "elementos": elementos}
+print(r.text)  
+r = requests.post(url + 'encolar', json = {'nombre': 'Juan', 'productos': ['manzana', 'pera']})
+print(r.text)
