@@ -25,11 +25,21 @@ class Cola:
             self.ultimo = None
         return valor
     def ver_listado(self):
-        pass
+        mostrar = read_root
+        mostrar = estado
+        mostrar = encolar
+        mostrar = desencolar
+        mostrar =  ver_todos
+        return mostrar
+    pass
     def ver_primero(self):
-        pass
+        mostrar = read_root
+        return mostrar
+    pass
     def ver_ultimo(self):
-        pass
+        show = ver_todos
+        return show
+    pass
     def contar(self):
-        total = 10
+        total = 5
         return total
