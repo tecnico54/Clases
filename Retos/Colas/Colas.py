@@ -24,21 +24,25 @@ class Cola:
         if self.primero is None:
             self.ultimo = None
         return valor
-    def ver_listado(self):
-        mostrar = read_root
-        mostrar = estado
-        mostrar = encolar
-        mostrar = desencolar
-        mostrar =  ver_todos
-        return mostrar
+  def ver_listado(self):
+        while read_root == {"Hello": "World", "estado": "ok"}:
+            print(read_root)
+            while estado == {"status": "ok", "elementos": elementos}:
+                print(estado)
+                while encolar == {"status": "ok"}:
+                    print(encolar)
+                    while desencolar == {"status": "ok", "elemento": elemento}:
+                        print(desencolar)
+                        while ver_todos == {"status": "ok", "elementos": elementos}:
+                            print(ver_todos)
     pass
     def ver_primero(self):
-        mostrar = read_root
-        return mostrar
+        while read_root == {"Hello": "World", "estado": "ok"}:
+            print(read_root)
     pass
     def ver_ultimo(self):
-        show = ver_todos
-        return show
+        while ver_todos == {"status": "ok", "elementos": elementos}:
+            print(ver_todos)
     pass
     def contar(self):
         total = 5
