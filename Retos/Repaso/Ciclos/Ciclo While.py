@@ -5,7 +5,6 @@ class nodo:
         self.apuntador = apuntador
     def __str__(self):
         return str(self.lista)
-lista = nodo
 lista1 = nodo(2, None)
 lista2 = nodo(3, None)
 lista3 = nodo(4, None)
