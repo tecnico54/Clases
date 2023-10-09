@@ -1,1 +1,18 @@
-
+import random
+import time
+def bubble_sort(arr):
+  n = len(arr)
+  for i in range(n - 1):
+    for j in range(n - i - 1):
+      if arr[j] > arr[j + 1]:
+        arr[j], arr[j + 1] = arr[j + 1], arr[j]
+  return arr
+inicio = time.time()
+random.seed(10)
+datos = [random.randint(0, 100) for _ in range(500)]
+ordenado = bubble_sort(datos)
+print(ordenado)
+fin = time.time()
+print("Tiempo de ejecucion: ", fin-inicio)
+print(f"El elemento 50 esta en la posición: ")
+print([datos.index(50)])
