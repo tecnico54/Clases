@@ -1,4 +1,4 @@
-list = [2, 3, 4, 5]
+liste = [2, 3, 4, 5]
 class nodo:
     def __init__(self, lista, apuntador = None):
         self.lista = lista
@@ -12,6 +12,6 @@ lista4 = nodo(1, None)
 lista5 = nodo(5, None)
 print(f"La lista es: ")
 print(lista1, lista2, lista4, lista3, lista5)
-while list == [2, 3, 4, 5]:
-    print(f"La lista modificada es: {list}")
-    list = 5
+while liste == [2, 3, 4, 5]:
+    print(f"La lista modificada es: {liste}")
+    liste = 5
