@@ -1,8 +1,0 @@
-d = 1
-p = 1000
-suma = 0
-print("**Los números pares del rango son: **")
-while d <= p:
-    if d % 2 == 0:
-      print(d)
-    d += 1

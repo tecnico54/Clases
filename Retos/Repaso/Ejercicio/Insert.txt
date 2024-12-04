@@ -1,4 +1,0 @@
-print("**Insertar**")
-datos = ["b", "c", "d"]
-datos.insert(0, "a")
-print(f"lista: {datos}")

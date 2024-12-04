@@ -1,1 +1,0 @@
-var Registro = "Te haz registrado exitosamente";
